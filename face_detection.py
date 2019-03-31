@@ -10,6 +10,7 @@ if cap.isOpened():
     _,frame = cap.read()
     cap.release() #releasing camera immediately after capturing picture
     if _ and frame is not None:
+        cv2.imshow("window", frame)
         cv2.imwrite('img.jpg', frame)
         cv2.destroyAllWindows()
 
