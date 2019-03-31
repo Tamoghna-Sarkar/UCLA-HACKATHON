@@ -19,7 +19,7 @@ os.system("cd .. ")
 sudoPassword = 'yolo'
 command = 'ssh -i latest ubuntu@129.213.50.216'
 p = os.system('echo %s|sudo %s' % (sudoPassword, command))
-os.system("cd hackathon/yolo-9000/darknet/data")
+os.system("cd hackathon\yolo-9000\darknet\data")
 os.system("git pull https://github.com/Tamoghna-Sarkar/vm")
 os.system("cd ..")
 os.system("python runthis2.py")
